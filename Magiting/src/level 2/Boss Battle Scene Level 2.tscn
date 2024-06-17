@@ -1,0 +1,499 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://assets/rainyhearts.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/level 2/Boss Battle Scene Level 2.gd" type="Script" id=2]
+[ext_resource path="res://assets/main character/main_character_movement.png" type="Texture" id=3]
+[ext_resource path="res://assets/World/GrassBackground.png" type="Texture" id=4]
+[ext_resource path="res://assets/World/DirtTileset.png" type="Texture" id=5]
+[ext_resource path="res://assets/Enemies/miguel_vicos.png" type="Texture" id=6]
+[ext_resource path="res://assets/UI/Player Battle Health.gd" type="Script" id=7]
+[ext_resource path="res://assets/UI/life_empty.png" type="Texture" id=8]
+[ext_resource path="res://assets/UI/life.png" type="Texture" id=9]
+[ext_resource path="res://assets/UI/Boss Health.gd" type="Script" id=10]
+
+[sub_resource type="TileSet" id=113]
+0/name = "DirtTileset.png 0"
+0/texture = ExtResource( 5 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 176, 80 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 48, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 56, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 24, Vector2( 3, 0 ), 144, Vector2( 3, 1 ), 146, Vector2( 3, 2 ), 18, Vector2( 3, 3 ), 16, Vector2( 4, 0 ), 176, Vector2( 4, 1 ), 182, Vector2( 4, 2 ), 434, Vector2( 4, 3 ), 50, Vector2( 4, 4 ), 178, Vector2( 5, 0 ), 248, Vector2( 5, 1 ), 255, Vector2( 5, 2 ), 507, Vector2( 5, 3 ), 59, Vector2( 5, 4 ), 251, Vector2( 6, 0 ), 440, Vector2( 6, 1 ), 447, Vector2( 6, 2 ), 510, Vector2( 6, 3 ), 62, Vector2( 6, 4 ), 446, Vector2( 7, 0 ), 152, Vector2( 7, 1 ), 155, Vector2( 7, 2 ), 218, Vector2( 7, 3 ), 26, Vector2( 7, 4 ), 154, Vector2( 8, 0 ), 184, Vector2( 8, 1 ), 191, Vector2( 8, 2 ), 506, Vector2( 8, 3 ), 58, Vector2( 8, 4 ), 186, Vector2( 9, 0 ), 443, Vector2( 9, 1 ), 254, Vector2( 9, 2 ), 442, Vector2( 9, 3 ), 190, Vector2( 10, 2 ), 250, Vector2( 10, 3 ), 187 ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 16, 16 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=115]
+bg_color = Color( 0.0431373, 0.0117647, 0.258824, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=114]
+bg_color = Color( 0.0431373, 0.0117647, 0.258824, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=116]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=117]
+bg_color = Color( 0.752941, 0.498039, 0.0235294, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=118]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=119]
+bg_color = Color( 0.0431373, 0.0117647, 0.258824, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+
+[node name="Boss Battle Scene Level 2" type="Control"]
+script = ExtResource( 2 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 160, 89.5002 )
+scale = Vector2( 1, 0.994442 )
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 320, 180 )
+
+[node name="Road" type="TileMap" parent="."]
+tile_set = SubResource( 113 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 327679, 0, 0, 262144, 0, 1, 262145, 0, 1, 262146, 0, 1, 262147, 0, 1, 262148, 0, 1, 262149, 0, 1, 262150, 0, 1, 262151, 0, 1, 262152, 0, 1, 262153, 0, 1, 262154, 0, 2, 393215, 0, 65536, 327680, 0, 65537, 327681, 0, 65537, 327682, 0, 65537, 327683, 0, 65537, 327684, 0, 65537, 327685, 0, 65537, 327686, 0, 65537, 327687, 0, 65537, 327688, 0, 65537, 327689, 0, 65537, 327690, 0, 65538, 458751, 0, 131072, 393216, 0, 131073, 393217, 0, 131073, 393218, 0, 131073, 393219, 0, 131073, 393220, 0, 131073, 393221, 0, 131073, 393222, 0, 131073, 393223, 0, 131073, 393224, 0, 131073, 393225, 0, 131073, 393226, 0, 131074 )
+
+[node name="Hint" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_right = 167.0
+margin_bottom = 45.0
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_styles/normal = SubResource( 115 )
+text = "Hint"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Player_Model" type="Sprite" parent="."]
+position = Vector2( 145, 82 )
+texture = ExtResource( 3 )
+hframes = 17
+
+[node name="Enemy" type="Sprite" parent="."]
+position = Vector2( 26, 76 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 6 )
+
+[node name="Answer" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_top = 134.0
+margin_right = 167.0
+margin_bottom = 180.0
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_styles/normal = SubResource( 115 )
+align = 1
+valign = 1
+autowrap = true
+
+[node name="DetailPanel" type="Panel" parent="."]
+margin_left = 167.0
+margin_right = 320.0
+margin_bottom = 180.0
+custom_styles/panel = SubResource( 114 )
+
+[node name="A" type="Button" parent="DetailPanel"]
+margin_left = 8.0
+margin_top = 10.0
+margin_right = 28.0
+margin_bottom = 30.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "A"
+
+[node name="B" type="Button" parent="DetailPanel"]
+margin_left = 38.0
+margin_top = 10.0
+margin_right = 58.0
+margin_bottom = 30.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "B"
+
+[node name="C" type="Button" parent="DetailPanel"]
+margin_left = 68.0
+margin_top = 10.0
+margin_right = 88.0
+margin_bottom = 30.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "C"
+
+[node name="D" type="Button" parent="DetailPanel"]
+margin_left = 96.0
+margin_top = 10.0
+margin_right = 116.0
+margin_bottom = 30.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "D"
+
+[node name="E" type="Button" parent="DetailPanel"]
+margin_left = 124.0
+margin_top = 10.0
+margin_right = 144.0
+margin_bottom = 30.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "E"
+
+[node name="F" type="Button" parent="DetailPanel"]
+margin_left = 8.0
+margin_top = 38.0
+margin_right = 28.0
+margin_bottom = 58.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "F"
+
+[node name="G" type="Button" parent="DetailPanel"]
+margin_left = 38.0
+margin_top = 38.0
+margin_right = 58.0
+margin_bottom = 58.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "G"
+
+[node name="H" type="Button" parent="DetailPanel"]
+margin_left = 68.0
+margin_top = 38.0
+margin_right = 88.0
+margin_bottom = 58.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "H"
+
+[node name="I" type="Button" parent="DetailPanel"]
+margin_left = 96.0
+margin_top = 38.0
+margin_right = 116.0
+margin_bottom = 58.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "I"
+
+[node name="J" type="Button" parent="DetailPanel"]
+margin_left = 124.0
+margin_top = 38.0
+margin_right = 144.0
+margin_bottom = 58.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "J"
+
+[node name="K" type="Button" parent="DetailPanel"]
+margin_left = 8.0
+margin_top = 68.0
+margin_right = 28.0
+margin_bottom = 88.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "K"
+
+[node name="L" type="Button" parent="DetailPanel"]
+margin_left = 39.0
+margin_top = 68.0
+margin_right = 59.0
+margin_bottom = 88.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "L"
+
+[node name="M" type="Button" parent="DetailPanel"]
+margin_left = 68.0
+margin_top = 68.0
+margin_right = 88.0
+margin_bottom = 88.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "M"
+
+[node name="N" type="Button" parent="DetailPanel"]
+margin_left = 96.0
+margin_top = 68.0
+margin_right = 116.0
+margin_bottom = 88.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "N"
+
+[node name="Ñ" type="Button" parent="DetailPanel"]
+margin_left = 124.0
+margin_top = 68.0
+margin_right = 144.0
+margin_bottom = 88.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "Ñ"
+
+[node name="O" type="Button" parent="DetailPanel"]
+margin_left = 8.0
+margin_top = 97.0
+margin_right = 28.0
+margin_bottom = 117.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "O"
+
+[node name="P" type="Button" parent="DetailPanel"]
+margin_left = 39.0
+margin_top = 97.0
+margin_right = 59.0
+margin_bottom = 117.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "P"
+
+[node name="Q" type="Button" parent="DetailPanel"]
+margin_left = 68.0
+margin_top = 97.0
+margin_right = 88.0
+margin_bottom = 117.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "Q"
+
+[node name="R" type="Button" parent="DetailPanel"]
+margin_left = 96.0
+margin_top = 97.0
+margin_right = 116.0
+margin_bottom = 117.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "R"
+
+[node name="S" type="Button" parent="DetailPanel"]
+margin_left = 124.0
+margin_top = 97.0
+margin_right = 144.0
+margin_bottom = 117.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "S"
+
+[node name="T" type="Button" parent="DetailPanel"]
+margin_left = 9.0
+margin_top = 125.0
+margin_right = 29.0
+margin_bottom = 145.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "T"
+
+[node name="U" type="Button" parent="DetailPanel"]
+margin_left = 39.0
+margin_top = 125.0
+margin_right = 59.0
+margin_bottom = 145.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "U"
+
+[node name="V" type="Button" parent="DetailPanel"]
+margin_left = 68.0
+margin_top = 125.0
+margin_right = 88.0
+margin_bottom = 145.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "V"
+
+[node name="W" type="Button" parent="DetailPanel"]
+margin_left = 96.0
+margin_top = 125.0
+margin_right = 116.0
+margin_bottom = 145.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "W"
+
+[node name="X" type="Button" parent="DetailPanel"]
+margin_left = 124.0
+margin_top = 125.0
+margin_right = 144.0
+margin_bottom = 145.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "X"
+
+[node name="Y" type="Button" parent="DetailPanel"]
+margin_left = 44.0
+margin_top = 152.0
+margin_right = 64.0
+margin_bottom = 172.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "Y"
+
+[node name="Z" type="Button" parent="DetailPanel"]
+margin_left = 80.0
+margin_top = 152.0
+margin_right = 100.0
+margin_bottom = 172.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 116 )
+custom_styles/normal = SubResource( 117 )
+text = "Z"
+
+[node name="BattleCam" type="Camera2D" parent="."]
+position = Vector2( 160, 90 )
+
+[node name="Proceed" type="Button" parent="."]
+margin_left = 53.0
+margin_top = 78.0
+margin_right = 113.0
+margin_bottom = 98.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 118 )
+custom_styles/normal = SubResource( 119 )
+text = "Proceed"
+
+[node name="Player UI" type="Control" parent="."]
+margin_left = 14.0
+margin_right = 134.0
+margin_bottom = 37.0
+script = ExtResource( 7 )
+
+[node name="HeartUIEmpty" type="TextureRect" parent="Player UI"]
+margin_left = 110.0
+margin_top = 101.0
+margin_right = 190.0
+margin_bottom = 117.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+stretch_mode = 2
+
+[node name="HeartUIFull" type="TextureRect" parent="Player UI"]
+margin_left = 110.0
+margin_top = 101.0
+margin_right = 190.0
+margin_bottom = 117.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 2
+
+[node name="Boss UI" type="Control" parent="."]
+margin_left = -97.0
+margin_top = -48.0
+margin_right = 23.0
+margin_bottom = -11.0
+script = ExtResource( 10 )
+
+[node name="HeartUIEmpty" type="TextureRect" parent="Boss UI"]
+margin_left = 111.0
+margin_top = 99.0
+margin_right = 159.0
+margin_bottom = 115.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+stretch_mode = 2
+
+[node name="HeartUIFull" type="TextureRect" parent="Boss UI"]
+margin_left = 111.0
+margin_top = 99.0
+margin_right = 159.0
+margin_bottom = 115.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 2
+
+[connection signal="pressed" from="DetailPanel/A" to="." method="_on_A_pressed"]
+[connection signal="pressed" from="DetailPanel/B" to="." method="_on_B_pressed"]
+[connection signal="pressed" from="DetailPanel/C" to="." method="_on_C_pressed"]
+[connection signal="pressed" from="DetailPanel/D" to="." method="_on_D_pressed"]
+[connection signal="pressed" from="DetailPanel/E" to="." method="_on_E_pressed"]
+[connection signal="pressed" from="DetailPanel/F" to="." method="_on_F_pressed"]
+[connection signal="pressed" from="DetailPanel/G" to="." method="_on_G_pressed"]
+[connection signal="pressed" from="DetailPanel/H" to="." method="_on_H_pressed"]
+[connection signal="pressed" from="DetailPanel/I" to="." method="_on_I_pressed"]
+[connection signal="pressed" from="DetailPanel/J" to="." method="_on_J_pressed"]
+[connection signal="pressed" from="DetailPanel/K" to="." method="_on_K_pressed"]
+[connection signal="pressed" from="DetailPanel/L" to="." method="_on_L_pressed"]
+[connection signal="pressed" from="DetailPanel/M" to="." method="_on_M_pressed"]
+[connection signal="pressed" from="DetailPanel/N" to="." method="_on_N_pressed"]
+[connection signal="pressed" from="DetailPanel/Ñ" to="." method="_on__pressed"]
+[connection signal="pressed" from="DetailPanel/O" to="." method="_on_O_pressed"]
+[connection signal="pressed" from="DetailPanel/P" to="." method="_on_P_pressed"]
+[connection signal="pressed" from="DetailPanel/Q" to="." method="_on_Q_pressed"]
+[connection signal="pressed" from="DetailPanel/R" to="." method="_on_R_pressed"]
+[connection signal="pressed" from="DetailPanel/S" to="." method="_on_S_pressed"]
+[connection signal="pressed" from="DetailPanel/T" to="." method="_on_T_pressed"]
+[connection signal="pressed" from="DetailPanel/U" to="." method="_on_U_pressed"]
+[connection signal="pressed" from="DetailPanel/V" to="." method="_on_V_pressed"]
+[connection signal="pressed" from="DetailPanel/W" to="." method="_on_W_pressed"]
+[connection signal="pressed" from="DetailPanel/X" to="." method="_on_X_pressed"]
+[connection signal="pressed" from="DetailPanel/Y" to="." method="_on_Y_pressed"]
+[connection signal="pressed" from="DetailPanel/Z" to="." method="_on_Z_pressed"]
+[connection signal="pressed" from="Proceed" to="." method="_on_Proceed_pressed"]

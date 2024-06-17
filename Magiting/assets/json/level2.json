@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What mode of transport did native Filipinos use?",
+    "choices": ["Galleon", "Balanghay", "Barko", "Brig"],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "_____ is the oldest human remains discovered in the Philippines.",
+    "choices": ["Homo Luzonesis", "Taong Tabon", "Peking Man", "Java Man"],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "The ______ was used as burial jars in early Philippine Society",
+    "choices": ["Spice Jar", "Mason Jar", "Manunggul Jar", "Canopic Jar"],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "Which ship was Magellan on when he landed in Mactan? ",
+    "choices": ["Victoria", "Santiago", "Concepcion", "Trinidad"],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "Where was the first Mass celebrated?",
+    "choices": ["Limasawa", "Mactan", "Manila", "Sulu"],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "Who wrote about Magellan’s expedition?",
+    "choices": [
+      "Miguel Lopez de Legazpi",
+      "Juan de Cartagena",
+      "Antonio Pigafetta",
+      "Diogo Barbosa"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "At the center of a community under reduccion, a ____ can be found.",
+    "choices": ["Townhall", "Church", "Munisipiyo", "Barracks"],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "What system did the Spaniards impose to physically and socially hegemonize the native Filipinos?",
+    "choices": ["Reduccion", "Polo y Servicio", "Taxation", "Dictatorship"],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "What was reduccion based on?",
+    "choices": [
+      "City of Paris",
+      "Ancient Greek Cities",
+      "Portuguese Cities",
+      "Roman Grid Pattern"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "The tax certificate which also served as an identification card for Filipinos is called a ____ ",
+    "choices": ["TIN", "Pasaporte", "SSS ID", "Cedula"],
+    "correctChoiceIndex": 3
+  }
+]

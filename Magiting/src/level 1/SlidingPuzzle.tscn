@@ -1,0 +1,179 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assets/rainyhearts.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/level 1/Board.gd" type="Script" id=2]
+[ext_resource path="res://src/level 1/SlidingPuzzle.gd" type="Script" id=3]
+[ext_resource path="res://assets/Puzzles/manunggul_jar.png" type="Texture" id=4]
+[ext_resource path="res://assets/scrollbar.tres" type="Theme" id=5]
+
+[sub_resource type="StyleBoxFlat" id=86]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="RectangleShape2D" id=87]
+extents = Vector2( 90, 90 )
+
+[sub_resource type="StyleBoxFlat" id=88]
+bg_color = Color( 0.0431373, 0.0117647, 0.258824, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=89]
+size = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=90]
+bg_color = Color( 0.752941, 0.498039, 0.0235294, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+
+[node name="Sliding Puzzle" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="PuzzlePanel" type="Panel" parent="."]
+margin_right = 180.0
+margin_bottom = 180.0
+custom_styles/panel = SubResource( 86 )
+
+[node name="Board" type="Area2D" parent="PuzzlePanel"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuzzlePanel/Board"]
+light_mask = 2
+position = Vector2( 90, 90 )
+shape = SubResource( 87 )
+disabled = true
+
+[node name="Puzzle" type="Sprite" parent="PuzzlePanel/Board"]
+position = Vector2( 1, 1 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( 75, 75 )
+hframes = 3
+vframes = 3
+
+[node name="Puzzle2" type="Sprite" parent="PuzzlePanel/Board"]
+position = Vector2( 60, 7.62939e-06 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( 75, 75 )
+hframes = 3
+vframes = 3
+frame = 1
+
+[node name="Puzzle3" type="Sprite" parent="PuzzlePanel/Board"]
+position = Vector2( 120, 7.62939e-06 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( 75, 75 )
+hframes = 3
+vframes = 3
+frame = 2
+
+[node name="Puzzle4" type="Sprite" parent="PuzzlePanel/Board"]
+position = Vector2( 7.62939e-06, 60 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( 75, 75 )
+hframes = 3
+vframes = 3
+frame = 3
+
+[node name="Puzzle5" type="Sprite" parent="PuzzlePanel/Board"]
+position = Vector2( 60, 60 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( 75, 75 )
+hframes = 3
+vframes = 3
+frame = 4
+
+[node name="Puzzle6" type="Sprite" parent="PuzzlePanel/Board"]
+position = Vector2( 120, 60 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( 75, 75 )
+hframes = 3
+vframes = 3
+frame = 5
+
+[node name="Puzzle7" type="Sprite" parent="PuzzlePanel/Board"]
+position = Vector2( 7.62939e-06, 120 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( 75, 75 )
+hframes = 3
+vframes = 3
+frame = 6
+
+[node name="Puzzle8" type="Sprite" parent="PuzzlePanel/Board"]
+position = Vector2( 60, 120 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( 75, 75 )
+hframes = 3
+vframes = 3
+frame = 7
+
+[node name="Puzzle9" type="Sprite" parent="PuzzlePanel/Board"]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 120, 120 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+offset = Vector2( 75, 75 )
+hframes = 3
+vframes = 3
+frame = 8
+
+[node name="DetailPanel" type="Panel" parent="."]
+margin_left = 180.0
+margin_right = 320.0
+margin_bottom = 180.0
+custom_styles/panel = SubResource( 88 )
+
+[node name="Details" type="RichTextLabel" parent="."]
+margin_left = 189.0
+margin_top = 6.0
+margin_right = 314.0
+margin_bottom = 135.0
+theme = ExtResource( 5 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 3 )
+
+[node name="PuzzleButton" type="Button" parent="."]
+margin_left = 206.0
+margin_top = 148.0
+margin_right = 283.0
+margin_bottom = 168.0
+custom_fonts/font = SubResource( 89 )
+custom_styles/normal = SubResource( 90 )
+text = "Proceed"
+
+[node name="AutoComplete" type="Button" parent="."]
+margin_left = 187.0
+margin_top = 148.0
+margin_right = 313.0
+margin_bottom = 168.0
+custom_fonts/font = SubResource( 89 )
+custom_styles/normal = SubResource( 90 )
+text = "Auto Complete (-1 health)"
+
+[node name="PuzzleCam" type="Camera2D" parent="."]
+position = Vector2( 160, 89 )
+
+[connection signal="pressed" from="PuzzleButton" to="." method="_on_PuzzleButton_pressed"]
+[connection signal="pressed" from="PuzzleButton" to="PuzzleButton" method="_on_PuzzleButton_pressed"]
+[connection signal="pressed" from="AutoComplete" to="PuzzlePanel/Board" method="_on_AutoComplete_pressed"]

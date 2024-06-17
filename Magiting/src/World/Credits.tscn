@@ -1,0 +1,166 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/rainyhearts.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/UI/bg.png" type="Texture" id=2]
+[ext_resource path="res://assets/UI/Landscape.png" type="Texture" id=3]
+[ext_resource path="res://src/World/Credits.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+
+[node name="Credits" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="Landscape" type="Sprite" parent="."]
+position = Vector2( 160, 90 )
+scale = Vector2( 0.5, 0.375 )
+texture = ExtResource( 3 )
+
+[node name="CopperPlate" type="Sprite" parent="."]
+position = Vector2( 155.5, 90 )
+scale = Vector2( 1.61719, 1.33594 )
+texture = ExtResource( 2 )
+
+[node name="Title" type="Label" parent="."]
+margin_left = 73.0
+margin_top = 26.0
+margin_right = 244.0
+margin_bottom = 41.0
+custom_colors/font_color = Color( 1, 0.980392, 0.980392, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Credits"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title2" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 47.0
+margin_right = 146.0
+margin_bottom = 62.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Programming"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title3" type="Label" parent="."]
+margin_left = 170.0
+margin_top = 47.0
+margin_right = 252.0
+margin_bottom = 62.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "RG Ludovico"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title4" type="Label" parent="."]
+margin_left = 63.0
+margin_top = 68.0
+margin_right = 145.0
+margin_bottom = 83.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Content"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title5" type="Label" parent="."]
+margin_left = 165.0
+margin_top = 67.0
+margin_right = 252.0
+margin_bottom = 82.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Eugene Crudo"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title6" type="Label" parent="."]
+margin_left = 171.0
+margin_top = 83.0
+margin_right = 253.0
+margin_bottom = 98.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "RG Ludovico"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title7" type="Label" parent="."]
+margin_left = 53.0
+margin_top = 95.0
+margin_right = 150.0
+margin_bottom = 128.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Art"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title8" type="Label" parent="."]
+margin_left = 170.0
+margin_top = 122.0
+margin_right = 252.0
+margin_bottom = 137.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "RG Ludovico"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title9" type="Label" parent="."]
+margin_left = 156.0
+margin_top = 104.0
+margin_right = 251.0
+margin_bottom = 119.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Hyubs Zapanta"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title10" type="Label" parent="."]
+margin_left = 172.0
+margin_top = 140.0
+margin_right = 267.0
+margin_bottom = 155.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "NYKNCK"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Back" type="Button" parent="."]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 62.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

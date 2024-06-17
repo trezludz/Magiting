@@ -1,0 +1,87 @@
+[
+  {
+    "question": "The soldiers that served as teachers in American-sponsored public schools were called____ ",
+    "choices": ["Thomasians", "Professors", "Thomasites", "Instructors"],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "A proclamation containing American propaganda to convince the American and Philippine public that their invasion was justified.",
+    "choices": [
+      "Benevolent Assimilation",
+      "White Man's Burden",
+      "Uncle Tom's Cabin",
+      "The Filipino's First Bath"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "After receiving a telegram from Pres. Emilio Aguinaldo, Gen. Antonio Luna went to ______ where he was assassinated.",
+    "choices": ["Malacañang", "Cabanatuan", "Malolos", "Pampanga"],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "The last Filipino general to surrender under American forces.",
+    "choices": [
+      "Gregorio del Pilar",
+      "Simeon Ola",
+      "Antonio Luna",
+      "Miguel Malvar"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "A tactic used by unsurrendering Filipinos after Aguinaldo was captured.",
+    "choices": [
+      "Trench Warfare",
+      "Urban Warfare",
+      "Guerilla Warfare",
+      "Blitzkreig"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "The first American civil-governor appointed by President William McKinley.",
+    "choices": [
+      "William Howard Taft",
+      "George Dewey",
+      "Arthur MacArthur",
+      "Eugene Allen Gilmore"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "This is the place where the first shots against Filipino troops occured, which sparked the Philippine-American War",
+    "choices": [
+      "Pinaglabanan, San Juan",
+      "Balsahan Bridge",
+      "San Juanico Bridge",
+      "Intramuros, Manila"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "Manifest Destiny and The White Man’s Burden were written to justify which mission of American Imperialism?",
+    "choices": [
+      "Asian Trade",
+      "Resource Exploitation",
+      "Religious Mission",
+      "Civilizing Mission"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "Januario Galut, a Tingguian Igorot, sold out which Filipino General at Tirad Pass?",
+    "choices": [
+      "Macario Sakay",
+      "Jose Alejandrino",
+      "Gregorio del Pilar",
+      "Juan Araneta"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "True or False. The Philippine-American War ended with the capture of President Emilio Aguinaldo.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  }
+]

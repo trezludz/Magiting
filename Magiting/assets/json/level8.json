@@ -1,0 +1,82 @@
+[
+  {
+    "question": "True or False. Ferdinand Marcos Sr. was a decorated veteran who garnered over 300 medals for his service in World War II.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "True or False. Contrary to popular belief, it was Ferdinand Chua who worked behind the scenes to dismiss the solid testimony against the murder charge against Marcos.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "_________ formally decreed the dictatorship of Pres. Ferdinand Marcos Sr.",
+    "choices": ["PD 1901", "PD 1801", "PD 1081", "PD 1019"],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "The mass protests led by activists in 1970 are also known as the ________. ",
+    "choices": [
+      "People Power Revolution",
+      "Battle of Mendiola",
+      "Battle of Plaza Miranda",
+      "First Quarter Storm"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "Marcos used the _________ to justify his declaration of Martial Law in the country.",
+    "choices": [
+      "Communist Threat",
+      "Assassination of Ninoy",
+      "First Quarter Storm",
+      "Mass Protests"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "True or False. To justify signing the Presidential Decree 1081, Marcos staged an ambush on Defense Minister Juan Ponce Enrile and pointed fingers at communist groups.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "The ___________ was suspended, removing the rights of Filipinos against illegal arrests and imprisonment.",
+    "choices": [
+      "Geneva Conventions",
+      "CHR",
+      "Freedom of Expression",
+      "Writ of Habeas Corpus"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "A Liberal Party political event was stopped by the Marcos Administration when two grenades were thrown onto the stage. This is known as the ___________.",
+    "choices": [
+      "Battle of Mendiola",
+      "Marcos' Wrath",
+      "Plaza Miranda Bombing",
+      "Arrest of Ninoy"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "The poem ___ written by Jose Maria Flores Lacaba was published by Focus Magazine in 1973, and had the inscription “MARCOS HITLER DIKTADOR TUTA” between the lines.",
+    "choices": [
+      "Prometheus Unbound",
+      "Still Life for Mendiola",
+      "Thrid World Opera",
+      "Dead Man's Tale"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "Amnesty International estimated that during Martial Law, ________ were imprisoned, ________ were tortured, and ________ were murdered.",
+    "choices": [
+      "7,000/100/240",
+      "50,000/21,000/680",
+      "70,000/34,000/3,240",
+      "10,000/34,000/3,240"
+    ],
+    "correctChoiceIndex": 2
+  }
+]

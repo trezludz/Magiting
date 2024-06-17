@@ -1,0 +1,190 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://assets/UI/Player UI.gd" type="Script" id=1]
+[ext_resource path="res://assets/UI/life.png" type="Texture" id=2]
+[ext_resource path="res://assets/UI/life_empty.png" type="Texture" id=3]
+[ext_resource path="res://assets/UI/puzzle_piece.png" type="Texture" id=4]
+[ext_resource path="res://assets/rainyhearts.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://assets/UI/JoystickSplitted.png" type="Texture" id=6]
+[ext_resource path="res://assets/UI/SmallHandleFilled.png" type="Texture" id=7]
+[ext_resource path="res://assets/UI/Joystick.gd" type="Script" id=8]
+[ext_resource path="res://src/level 1/Button.gd" type="Script" id=9]
+[ext_resource path="res://assets/UI/Pause.gd" type="Script" id=10]
+[ext_resource path="res://assets/UI/bg.png" type="Texture" id=11]
+[ext_resource path="res://assets/UI/PauseMenu.gd" type="Script" id=12]
+
+[sub_resource type="DynamicFont" id=81]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=82]
+font_data = ExtResource( 5 )
+
+[sub_resource type="CircleShape2D" id=94]
+radius = 150.0
+
+[sub_resource type="DynamicFont" id=83]
+size = 10
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=84]
+bg_color = Color( 0.0431373, 0.0117647, 0.258824, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=95]
+size = 14
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=96]
+bg_color = Color( 0.0431373, 0.0117647, 0.258824, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="DynamicFont" id=97]
+size = 19
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=98]
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=99]
+bg_color = Color( 0.0313726, 0.145098, 0.411765, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[sub_resource type="DynamicFont" id=100]
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxFlat" id=101]
+bg_color = Color( 0.356863, 0.027451, 0.027451, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[node name="Player UI" type="Control"]
+margin_right = 120.0
+margin_bottom = 37.0
+script = ExtResource( 1 )
+
+[node name="HeartUIEmpty" type="TextureRect" parent="."]
+margin_right = 80.0
+margin_bottom = 16.0
+texture = ExtResource( 3 )
+stretch_mode = 2
+
+[node name="HeartUIFull" type="TextureRect" parent="."]
+margin_right = 80.0
+margin_bottom = 16.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 2
+
+[node name="PuzzlePiece" type="TextureRect" parent="."]
+margin_left = 2.0
+margin_top = 16.0
+margin_right = 18.0
+margin_bottom = 33.0
+texture = ExtResource( 4 )
+
+[node name="PuzzlePieceCounter" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 18.0
+margin_right = 42.0
+margin_bottom = 33.0
+custom_fonts/font = SubResource( 81 )
+text = "x0"
+
+[node name="HintCounter" type="Label" parent="."]
+margin_left = 2.0
+margin_top = 33.0
+margin_right = 42.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 82 )
+text = "Hints: "
+
+[node name="Joystick" type="TouchScreenButton" parent="."]
+self_modulate = Color( 1, 1, 1, 0.490196 )
+position = Vector2( 20, 104 )
+scale = Vector2( 0.2, 0.2 )
+normal = ExtResource( 6 )
+shape = SubResource( 94 )
+script = ExtResource( 8 )
+
+[node name="Knob" type="Sprite" parent="Joystick"]
+self_modulate = Color( 1, 1, 1, 0.490196 )
+position = Vector2( 178, 178 )
+texture = ExtResource( 7 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 248.0
+margin_top = 154.0
+margin_right = 308.0
+margin_bottom = 174.0
+custom_fonts/font = SubResource( 83 )
+custom_styles/normal = SubResource( 84 )
+text = "Solve Puzzle"
+script = ExtResource( 9 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Pause" type="Button" parent="."]
+margin_left = 264.0
+margin_top = 6.0
+margin_right = 306.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 95 )
+custom_styles/normal = SubResource( 96 )
+text = "Pause"
+script = ExtResource( 10 )
+
+[node name="PauseMenu" type="Sprite" parent="."]
+position = Vector2( 160, 88 )
+scale = Vector2( 0.898439, 0.738283 )
+texture = ExtResource( 11 )
+script = ExtResource( 12 )
+
+[node name="GamePaused" type="Label" parent="PauseMenu"]
+margin_left = -54.5391
+margin_top = -41.9893
+margin_right = 57.4609
+margin_bottom = -22.9893
+custom_fonts/font = SubResource( 97 )
+text = "GAME PAUSED"
+align = 1
+percent_visible = -0.1
+
+[node name="Resume" type="Button" parent="PauseMenu"]
+margin_left = -29.0
+margin_top = -12.0
+margin_right = 31.0
+margin_bottom = 6.0
+custom_fonts/font = SubResource( 98 )
+custom_styles/normal = SubResource( 99 )
+text = "Resume"
+
+[node name="MainMenu" type="Button" parent="PauseMenu"]
+margin_left = -36.7304
+margin_top = 12.1905
+margin_right = 38.2696
+margin_bottom = 32.1905
+custom_fonts/font = SubResource( 100 )
+custom_styles/normal = SubResource( 101 )
+text = "Main Menu"
+__meta__ = {
+"_edit_group_": true
+}
+
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Pause" to="Pause" method="_on_Pause_pressed"]
+[connection signal="pressed" from="PauseMenu/Resume" to="PauseMenu" method="_on_Resume_pressed"]
+[connection signal="pressed" from="PauseMenu/MainMenu" to="PauseMenu" method="_on_MainMenu_pressed"]

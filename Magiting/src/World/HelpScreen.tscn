@@ -1,0 +1,84 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/rainyhearts.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/UI/bg.png" type="Texture" id=2]
+[ext_resource path="res://assets/UI/Landscape.png" type="Texture" id=3]
+[ext_resource path="res://src/World/HelpScreen.gd" type="Script" id=4]
+[ext_resource path="res://assets/scrollbar.tres" type="Theme" id=5]
+
+[sub_resource type="DynamicFont" id=7]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+
+[node name="HelpScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="Landscape" type="Sprite" parent="."]
+position = Vector2( 160, 90 )
+scale = Vector2( 0.5, 0.375 )
+texture = ExtResource( 3 )
+
+[node name="CopperPlate" type="Sprite" parent="."]
+position = Vector2( 161.5, 83.7501 )
+scale = Vector2( 2.10156, 1.43359 )
+texture = ExtResource( 2 )
+
+[node name="Title" type="Label" parent="."]
+margin_left = 70.0
+margin_top = 12.0
+margin_right = 262.0
+margin_bottom = 54.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "HOW TO PLAY"
+align = 1
+valign = 1
+
+[node name="Text" type="RichTextLabel" parent="."]
+margin_left = 64.0
+margin_top = 60.0
+margin_right = 286.0
+margin_bottom = 158.0
+theme = ExtResource( 5 )
+custom_colors/default_color = Color( 0.976471, 0.976471, 0.976471, 1 )
+custom_fonts/normal_font = SubResource( 8 )
+text = "- Collect puzzle pieces to unlock the sliding puzzle mini-game. Auto-completing the puzzle will subtract 1 health from the player.
+
+- Approach an enemy NPC to initiate a battle.
+
+- NPC battles are formatted to be a multiple choice question and answer game. Wrong answers subtract 1 health from the player. Correct answers will add 1 health to the player, maximum of 5 health.
+
+- Boss battles are formatted to be a hangman type game.
+
+- The player is required to defeat all enemies, solve the sliding puzzle, and defeat the boss to proceed to the next level, except for level 1.
+
+- The player is given 5 health at the start of each level.
+
+- Approach friendly NPCs to trigger their dialogue, which may provide useful information during battles."
+
+[node name="Back" type="Button" parent="."]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 62.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

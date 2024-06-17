@@ -1,0 +1,62 @@
+[
+  {
+    "question": "The Spaniards used a trade route between Manila and Mexico which was known as the _________. ",
+    "choices": ["Galleon Trade", "World Trade", "Pacific Trade", "Spice Trade"],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "This secure spot in Manila made it easy for trade in the bay",
+    "choices": ["Tondo", "Luneta", "Intramuros", "Santa Mesa"],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "How much were Filipinos forced to pay tributo to the Spaniards?",
+    "choices": ["2 Reales", "10 Pesos", "8 Pesos", "8 Reales"],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "What do you call the forced labor imposed by the Spaniards?",
+    "choices": ["Reduccion", "Polo y Servicio", "Cedula", "Tributo"],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "What derogatory term did the Spaniards use on the natives?",
+    "choices": ["Filibustero", "Moro", "Indio", "Insulares"],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "The highest ranking official that governs the Philippine Colony is called the ____",
+    "choices": [
+      "Presidente",
+      "Governor-General",
+      "Gobernadorcillo",
+      "Guardia-Sibil"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "The priest/s accused of sparking a mutiny in Cavite and were sentenced to death",
+    "choices": ["GomBurZa", "MarJoHa", "Padre Pedro Pelaez", "Padre Salvi"],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "True or False. The Spaniards surrendered to the Filipinos.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "The ______ was an organization founded in Spain by Filipino liberals exiled in 1872",
+    "choices": [
+      "Liberal Youth Movement",
+      "Katipunan",
+      "La Liga Filipina",
+      "La Solidaridad"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "How much did the United States pay for the acquisition of the Philippines?",
+    "choices": ["$30 Million", "$20 Million", "$25 Million", "$18 Million"],
+    "correctChoiceIndex": 1
+  }
+]

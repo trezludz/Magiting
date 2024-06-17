@@ -1,0 +1,82 @@
+[
+  {
+    "question": "A controversy in the Ramos Administration involving the sale of ___________ in Manila Bay between the Public Estate Authority and a Malaysian consortium.",
+    "choices": ["Military Ships", "Yachts", "Reclaimed Land", "Manila Hotel"],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "The EXPO Filipino project in Clark Air Base amounted to _________.",
+    "choices": [
+      "3 Million Pesos",
+      "4 Billion Pesos",
+      "4 Million Pesos",
+      "300,000 Pesos"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "Many public companies were sold to private companies during the Ramos Administration. Among these was an oil company called _________.",
+    "choices": ["Petron", "Shell", "Unioil", "Total"],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "The _____________ originated in Thailand due to the collapse of the Thai Baht. This also negatively affected the economy of the Philippines.",
+    "choices": [
+      "Great Depression",
+      "Asian Financial Crisis",
+      "2008 Financial Crisis",
+      "World Financial Crisis"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "______________, then a member of Congress, supported Estrada's presidential campaign, which garnered support from the country's poor and marginalized.",
+    "choices": [
+      "Ferdinand Marcos Jr.",
+      "Loren Legarda",
+      "Imelda Marcos",
+      "Gringo Honasan"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "True or False. Corruption scandals erupted in October 2000 when a politician claimed that Estrada accepted millions of dollars in bribes.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "True or False. Gloria Macapagal-Arroyo was impeached during her presidency for rigging the 2004 elections.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "After thousands of Estrada supporters stormed the gates of Malacañang Palace, Arroyo declared _________.",
+    "choices": [
+      "State of Emergency",
+      "Martial Law",
+      "State of Rebellion",
+      "War"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "The ____________, which implicated a powerful political clan, was the precedent for Arroyo to declare Martial Law in Mindanao.",
+    "choices": ["Maguindanao Massacre", "MILF", "ISIS", "Mindanao Seccession"],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "The ___________ was an attempted coup that sought to force Arroyo to resign from the presidency.",
+    "choices": [
+      "Trillanes Mutiny",
+      "Ramos Rebellion",
+      "Estrada Rebellion",
+      "Oakwood Mutiny"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "True or False. Arroyo did not pardon Estrada who was convicted of plunder.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  }
+]

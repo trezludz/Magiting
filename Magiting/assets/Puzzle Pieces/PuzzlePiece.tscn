@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/level 1/PuzzlePiece.gd" type="Script" id=1]
+[ext_resource path="res://assets/UI/puzzle_piece.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=81]
+extents = Vector2( 6, 5.5 )
+
+[node name="PuzzlePiece4" type="StaticBody2D"]
+position = Vector2( -52, 271 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="puzzleHitBox" type="Area2D" parent="Sprite"]
+
+[node name="collision" type="CollisionShape2D" parent="Sprite/puzzleHitBox"]
+position = Vector2( 0, 1 )
+shape = SubResource( 81 )
+
+[connection signal="area_entered" from="Sprite/puzzleHitBox" to="." method="_on_puzzleHitBox_area_entered"]

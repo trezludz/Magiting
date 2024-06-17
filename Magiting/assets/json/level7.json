@@ -1,0 +1,82 @@
+[
+  {
+    "question": "In the 1946 elections, Manuel Roxas founded the ________ to campaign against Pres. Sergio Osmena Sr.",
+    "choices": [
+      "Nacionalista Party",
+      "Liberal Party",
+      "Democratic Party",
+      "Republican Party"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "True or False. The Philippines in 1946 gained independence without the assistance of the Americans.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "The Philippine Rehabilitation Act appropriated ___________ pesos providing the Filipino public with their needs. ",
+    "choices": ["20 Million", "100 Million", "120 Million", "240 Million"],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "Because of the lack of national funds for national security, the Philippines entered agreements with the United States. The first one is ________.",
+    "choices": [
+      "Bell-Trade Act",
+      "Military Assistance Pact",
+      "Military Bases Agreement",
+      "National Defense Pact"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "This pact exploited the Philippines’ national military resources under the guise of “mutual agreement”.",
+    "choices": [
+      "Bell-Trade Act",
+      "Military Assistance Pact",
+      "Military Bases Agreement",
+      "National Defense Pact"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "The __________ allowed the United States to exploit natural resources from the Philippines.",
+    "choices": [
+      "Bell-Trade Act",
+      "Military Assistance Pact",
+      "Military Bases Agreement",
+      "National Defense Pact"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "___________ gave American citizens and corporations the right to natural resources from the Philippines equal to that of Filipino citizens.",
+    "choices": [
+      "Citizenship",
+      "Reparations",
+      "Military Assistance",
+      "Parity Rights"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "The HUKs, comprised of peasants and farmers, asked for ___________ from the Roxas Administration.",
+    "choices": ["Political Seats", "Land Reforms", "Recognition", "Legitimacy"],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "The HUKs were declared as a _________ and ________ organization because of their Communist leanings.",
+    "choices": [
+      "Heroic, Legitimate",
+      "Seditious, Illegal",
+      "Criminal, Rebellious",
+      "Righteous, Just"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "Magsaysay proposed to use the military and a CIA-initiated organization called the _______ to guard the polls for the 1951 elections.",
+    "choices": ["NAMFREL", "COMELEC", "Pulse Asia", "PSA"],
+    "correctChoiceIndex": 0
+  }
+]

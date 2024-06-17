@@ -1,0 +1,72 @@
+[
+  {
+    "question": "This proclamation lifted Martial Law on January 17, 1981.",
+    "choices": [
+      "Proclamation 2015",
+      "Proclamation 1081",
+      "Proclamation 1035",
+      "Proclamation 2045"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "The Assassination of__________ catalyzed the middle class and economic elite to join the opposition against the Marcos Regime.",
+    "choices": [
+      "Ninoy Aquino",
+      "Cory Aquino",
+      "Juan Ponce Enrile",
+      "Fidel Ramos"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "Groups such as _________ and ________ were formed due to the collapse and decline of the economy and the country.",
+    "choices": ["PNP, PMA", "DSWD, DPWH", "JAJA, CORD", "BIR, PSA"],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "Mass protests were held against the widespread human rights abuses, plunder and corruption of Marcos _________ and foreign capitalists.",
+    "choices": ["Dissenters", "Cronies", "Opponents", "Rivals"],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "A __________ was held on February 7, 1986, which sought to legitimize Marcos’ stay in power.",
+    "choices": [
+      "Snap Election",
+      "Military Campaign",
+      "Anti-American Campaign",
+      "Fair Election"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "Following the exposure of the Reform the Armed Forces Movement of committing a coup d'etat, ___________ and _______ sought shelter inside Camp Aguinaldo and Camp Crame.",
+    "choices": [
+      "Enrile, Ramos",
+      "Honasan, Ramos",
+      "Enrile, Honasan",
+      "Ramos, Cory Aquino"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "True or False. Enrile and Ramos recognized Cory Aquino as the winner of the Snap Election polls.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "True or False. The People Power Revolution was contained only in the National Capital Region.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "The Marcos Family __________ in/from Malacañang Palace as advised by the American Government.",
+    "choices": ["Stayed", "Hid", "Barricaded", "Escaped"],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "This radio station played a vital role in the EDSA People Power Revolution.",
+    "choices": ["DZRH", "DZMM", "Radio Veritas", "DZMB"],
+    "correctChoiceIndex": 2
+  }
+]

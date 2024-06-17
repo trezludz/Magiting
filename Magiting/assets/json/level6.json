@@ -1,0 +1,82 @@
+[
+  {
+    "question": "The __________ was a belief by the Japanese to justify their conquest and gain control of other Asian countries to establish unity in culture, economy, and politics.",
+    "choices": [
+      "GEACPS",
+      "One Asia Sentiment",
+      "Western Imperialism",
+      "Meiun no Nippon"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "The _________ was established by the Americans to counter any foreign invasion, particularly the Japanese.",
+    "choices": [
+      "National Defense Council",
+      "Guerilla Corps",
+      "USAFFE",
+      "Phil. Scout Regiment"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "The surprise attack at __________ on December 7, 1941, was to cripple the American Pacific Fleet, making it harder for Americans to send reinforcements in Asia.",
+    "choices": ["Midway", "Pearl Harbor", "Guadalcanal", "Iwo Jima"],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "The ________ marked the surrender of the American and Filipino troops, but local resistance persisted.",
+    "choices": [
+      "Manila as Open City",
+      "Fall of Corregidor",
+      "Battle of Manila",
+      "Fall of Bataan"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "_______ was a group of Filipinos who collaborated with the Japanese by identifying members of the resistance as well as those who helped the guerillas.",
+    "choices": ["Uragirimono", "Comfort Women", "The Illustrados", "Makapili"],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "The _________ was a guerilla group established in Central Luzon and Southern Tagalog, which became one of the most effective resistance groups against the Japanese.",
+    "choices": [
+      "USAFFE",
+      "Makabayan Corps",
+      "HUKBALAHAP",
+      "MacArthur's Sharpshooters"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "Surrendering Filipino and American troops were forced to march from ________ to ________, which became known to us as the “Death March”.",
+    "choices": [
+      "Bataan, Tarlac",
+      "Manila, Bicol",
+      "Pampanga, Manila",
+      "Bulacan, Cavite"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "Filipino women were forced to become ________ for the Japanese soldiers.",
+    "choices": ["Geisha", "Comfort Women", "Consorts", "Escorts"],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "Pres. Roosevelt agreed to grant the Philippines independence as long as it were a _________ and that the United States was allowed to establish ________ in the country.",
+    "choices": [
+      "Democracy, Businesses",
+      "Democracy, Bases",
+      "Commonwealth, Bases",
+      "State, Businesses"
+    ],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "Gen. Douglas MacArthur __________ Huk leaders Luis Taruc and Casto Alejandrino.",
+    "choices": ["Commended", "Awarded", "Arrested", "Condemned"],
+    "correctChoiceIndex": 2
+  }
+]

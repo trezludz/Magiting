@@ -1,0 +1,168 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/rainyhearts.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/UI/bg.png" type="Texture" id=2]
+[ext_resource path="res://assets/UI/Landscape.png" type="Texture" id=3]
+[ext_resource path="res://src/World/LevelSelect.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=7]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.0313726, 0.145098, 0.411765, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[sub_resource type="DynamicFont" id=10]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 1, 1, 1, 1 )
+
+[node name="LevelSelect" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="Landscape" type="Sprite" parent="."]
+position = Vector2( 160, 90 )
+scale = Vector2( 0.5, 0.375 )
+texture = ExtResource( 3 )
+
+[node name="CopperPlate" type="Sprite" parent="."]
+position = Vector2( 155.5, 90 )
+scale = Vector2( 1.61719, 1.33594 )
+texture = ExtResource( 2 )
+
+[node name="Title" type="Label" parent="."]
+margin_left = 63.0
+margin_top = 30.0
+margin_right = 255.0
+margin_bottom = 72.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "LEVEL SELECT"
+align = 1
+valign = 1
+
+[node name="Level 1" type="Button" parent="."]
+margin_left = 72.0
+margin_top = 71.0
+margin_right = 128.0
+margin_bottom = 91.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 1"
+
+[node name="Level 2" type="Button" parent="."]
+margin_left = 72.0
+margin_top = 93.0
+margin_right = 128.0
+margin_bottom = 113.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 2"
+
+[node name="Level 3" type="Button" parent="."]
+margin_left = 72.0
+margin_top = 115.0
+margin_right = 128.0
+margin_bottom = 135.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 3"
+
+[node name="Level 4" type="Button" parent="."]
+margin_left = 72.0
+margin_top = 137.0
+margin_right = 128.0
+margin_bottom = 157.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 4"
+
+[node name="Level 5" type="Button" parent="."]
+margin_left = 132.0
+margin_top = 71.0
+margin_right = 188.0
+margin_bottom = 91.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 5"
+
+[node name="Level 6" type="Button" parent="."]
+margin_left = 132.0
+margin_top = 93.0
+margin_right = 188.0
+margin_bottom = 113.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 6"
+
+[node name="Level 7" type="Button" parent="."]
+margin_left = 132.0
+margin_top = 115.0
+margin_right = 188.0
+margin_bottom = 135.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 7"
+
+[node name="Level 8" type="Button" parent="."]
+margin_left = 132.0
+margin_top = 137.0
+margin_right = 188.0
+margin_bottom = 157.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 8"
+
+[node name="Level 9" type="Button" parent="."]
+margin_left = 192.0
+margin_top = 71.0
+margin_right = 248.0
+margin_bottom = 91.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 9"
+
+[node name="Level 10" type="Button" parent="."]
+margin_left = 192.0
+margin_top = 93.0
+margin_right = 248.0
+margin_bottom = 113.0
+custom_fonts/font = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Level 10"
+
+[node name="Back" type="Button" parent="."]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 62.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+text = "Back"
+
+[connection signal="pressed" from="Level 1" to="." method="_on_Level_1_pressed"]
+[connection signal="pressed" from="Level 2" to="." method="_on_Level_2_pressed"]
+[connection signal="pressed" from="Level 3" to="." method="_on_Level_3_pressed"]
+[connection signal="pressed" from="Level 4" to="." method="_on_Level_4_pressed"]
+[connection signal="pressed" from="Level 5" to="." method="_on_Level_5_pressed"]
+[connection signal="pressed" from="Level 6" to="." method="_on_Level_6_pressed"]
+[connection signal="pressed" from="Level 7" to="." method="_on_Level_7_pressed"]
+[connection signal="pressed" from="Level 8" to="." method="_on_Level_8_pressed"]
+[connection signal="pressed" from="Level 9" to="." method="_on_Level_9_pressed"]
+[connection signal="pressed" from="Level 10" to="." method="_on_Level_10_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

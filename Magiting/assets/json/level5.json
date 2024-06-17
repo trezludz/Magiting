@@ -1,0 +1,82 @@
+[
+  {
+    "question": "In public schools, _______ was the only language to be used as the mode of instruction.",
+    "choices": ["Latin", "English", "Spanish", "Filipino"],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "True or False. The Flag Law allowed the Philippine Flag to be raised as long as the American Flag was above it.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "How did the Americans cut the ties between Filipino civilians and soldiers?",
+    "choices": [
+      "Reconcentration Act",
+      "Reduccion",
+      "Concentration Camps",
+      "Installing Native Spies"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "Manuel Quezon legislated what act in 1934 to prepare the Philippines for self-governance after 10 years?",
+    "choices": [
+      "Bell Trade Act",
+      "Self-Governance Act",
+      "Philippine Independence Act",
+      "Tydings-McDuffie Act"
+    ],
+    "correctChoiceIndex": 3
+  },
+  {
+    "question": "True or False. Filipino farmers prospered during the Commonwealth period.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "The looming threat of the Japanese Invasion led to the enactment of which act?",
+    "choices": [
+      "Mutual Bases Agreement",
+      "Mutual Defense Act",
+      "National Defense Act",
+      "Conscription Act"
+    ],
+    "correctChoiceIndex": 2
+  },
+  {
+    "question": "In preparation for a possible war with Japan, Quezon appointed which general as a military adviser?",
+    "choices": [
+      "Gen. Douglas Macarthur",
+      "Gen. Dwight Eisenhower",
+      "Gen. George Patton",
+      "Gen. Vicente Lim"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "Which does not belong to the group?",
+    "choices": [
+      "Asian Trade",
+      "Resource Exploitation",
+      "Religious Mission",
+      "Civilizing Mission"
+    ],
+    "correctChoiceIndex": 0
+  },
+  {
+    "question": "True or False. The Quezon Administration continued to collaborate with the American Government instead of helping farmers and laborers in the Philippines.",
+    "choices": ["True", "False", "", ""],
+    "correctChoiceIndex": 1
+  },
+  {
+    "question": "To protect Filipino businessmen from foreign influence, this law was passed.",
+    "choices": [
+      "GEAPS Law",
+      "Anti-Dummy Law",
+      "Foreign Ownership Law",
+      "Alien Tax Law"
+    ],
+    "correctChoiceIndex": 1
+  }
+]
